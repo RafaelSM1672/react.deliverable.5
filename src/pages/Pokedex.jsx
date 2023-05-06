@@ -138,7 +138,7 @@ const Pokedex = () => {
 
                 {/* lista de páginas */}
                 {
-                    pagesInBlock.map(numberPage => <li onClick={() => setCurrentPage(numberPage)} className={`p-3 bg-red-600 font-bold text-white rounded-md cursor-pointer ${numberPage == currentPage && "bg-red-900"}`} key={numberPage}>{numberPage}</li>)
+                    pagesInBlock.map(numberPage => <li onClick={() => setCurrentPage(numberPage)} className={`p-3 font-bold text-white rounded-md cursor-pointer ${numberPage == currentPage ? "bg-red-900" : "bg-red-600"}`} key={numberPage}>{numberPage}</li>)
                 }
 
                 {/* Página siguiente */}
